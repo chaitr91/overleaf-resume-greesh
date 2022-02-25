@@ -1,0 +1,133 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1, 21 November 2016) written by
+% LianTze Lim (liantze@gmail.com), based on the 
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you want to use \orcid or the
+%% academicons icons, add "academicons"
+%% to the \documentclass options. 
+%% Then compile with XeLaTeX or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% When using the "academicons" option,
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% for hyperlink
+\usepackage{hyperref}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{2F9E43}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{GREESHMA RAMADAS}
+  \tagline{  }
+
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{greeshmar2892@gmail.com}
+  \linkedin{linkedin.com/in/rgreeshma28/}
+  % \phone{+8623723680}
+ 
+  
+  \phone{+18623723680}   \location{Dallas, Texas}  
+  
+%   \github{} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want. Extend the right margin by 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
+\begin{adjustwidth}{}{-8cm}
+\makecvheader
+\end{adjustwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Academic Projects}
+\textbf{Library Management Database (SQL, Mongo DB)}
+\begin{itemize}
+\item  Prepared the design of an entity relationship diagram (ERD) model for library database architecture through MS Visio.
+\item  Created tables and wrote SQL queries to perform data manipulation, normalization including insert, update and delete queries for library transactions and management.
+\end{itemize}
+\divider
+
+\textbf{ {Product Development - Improving existing product WhatsApp }}
+\begin{itemize}
+\item  Worked on WhatsApp enhancement features.Unable to mute a specific contact in a group chat, we devised a solution by assessing the target persona, 3C-4P, product positioning, and developed a productroadmap.
+\end{itemize}
+\divider
+
+\textbf{{Agile Project Management (MS Project)}}
+\begin{itemize}
+\item  Using MS Project tool, I created a Gantt chart, project task, resource name, resource allocation, critical path, total slack, and free slack for a software-controlled conveyor project. Analyzed the critical path before and after resource allocation, resolved over-allocated resources by resource leveling, evaluated examined the effects on total cost, duration of the project after resolving the over-allocation problem.
+\end{itemize}
+\divider
+ 
+ \textbf{{Evaluation of UTD Covid 19 pandemic response (SPSS, XL data Analyst, Qualtrics)}}
+\begin{itemize}
+\item  A questionnaire was developed using Qualtrics to analyze the students view about the safety measure taken by UTD to prevent spread of covid 19 pandemic. Sample size of 80 respondents was taken at UTD who attend classes in person and online to answer the questionnaire. The result was found that students would prefer to attend online classes, extremely satisfied with the way UTD has taken the measures to prevent the spread of covid 19 at campus.
+\end{itemize}
+\divider
+
+\textbf{{Marketing Plan for GOAT landscape service}} 
+\begin{itemize}
+\item Developed a marketing plan for Goat landscaping service in the city of Celina Texas and implemented a detailed financial projection of costs and revenues.
+\item Performed SWOT analysis, analyzed target market, price, promotion,service, positioning, Situation and Environment Analysis in landscaping sector.
+\end{itemize}
+
+\cvsection{EXPERIENCE}
+\cvevent{Kalpatharu Breweries Distilleries Pvt Ltd }{Marketing Executive}{June 2017-August 2021} {Bangalore,India}
+ 
+\begin{itemize}
+\item Established and maintained a strong client relationship and increased sales by using communication skills.
+\item  Prepared detailed reports on marketing analysis findings, which include graphs, charts and illustrations to translate complex information into understandable terms.
+\item Performed SWOT analysis and promotions which increased customer rate.
+\item Created SEM, SEO, SMM, E-mail, Facebook Campaigns.
+\end{itemize}
+\end{document}
+
